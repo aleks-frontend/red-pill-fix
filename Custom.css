@@ -952,6 +952,53 @@ body #tcb-modal-wordpress-content div.wp-editor-area {
    border-radius: 7px;
 }
 
+/* Custom Responsive CSS for the Quiz step 2 */
+
+@media only screen and (max-width: 1100px) {
+    .tqb-template-style-1 .tqb-question-wrapper .tqb-answers-container.tqb-answer-has-image .tqb-answer-inner-wrapper .tqb-answer-image-type .tqb-answer-text-container .tqb-answer-text {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .tqb-template-style-1 .tqb-question-wrapper .tqb-answers-container.tqb-answer-has-image {
+        flex-direction: column;
+    }
+    
+    .tqb-question-wrapper .tqb-answers-container.tqb-answer-has-image .tqb-answer-inner-wrapper {
+        width: 100% !important;
+        padding: 15px !important;
+    }
+
+    .tqb-template-style-1 .tqb-question-wrapper .tqb-answers-container.tqb-answer-has-image .tqb-answer-inner-wrapper .tqb-answer-image-type {
+        display: flex;
+        align-items: center;
+    }
+
+    .tqb-template-style-1 .tqb-question-wrapper .tqb-answers-container.tqb-answer-has-image .tqb-answer-inner-wrapper .tqb-answer-image-type .tqb-answer-image-container {
+        max-width: 65px;
+    }
+
+    .tqb-template-style-1 .tqb-question-wrapper .tqb-answers-container.tqb-answer-has-image .tqb-answer-inner-wrapper .tqb-answer-image-type .tqb-answer-text-container {
+        padding: 0 0 0 20px !important;
+    }
+
+    .tqb-template-style-1 .tqb-question-wrapper .tqb-answers-container.tqb-answer-has-image .tqb-answer-inner-wrapper .tqb-answer-image-type .tqb-answer-text-container .tqb-answer-text {
+        padding: 0 0 0 30px !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .tqb-template-style-1 .tqb-question-wrapper .tqb-answers-container.tqb-answer-has-image .tqb-answer-inner-wrapper {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    
+    .tqb-template-style-1 .tqb-question-wrapper .tqb-answers-container.tqb-answer-has-image .tqb-answer-inner-wrapper .tqb-answer-image-type .tqb-answer-text-container .tqb-answer-text {
+        font-size: 22px;
+    }
+}
+
 
 /* Forcing FaktPro-Normal as the quiz font */
 
