@@ -943,7 +943,7 @@ body #tcb-modal-wordpress-content div.wp-editor-area {
 }
 
 .tqb-answer-inner-wrapper {
-    border-radius: 30px !important;
+    border-radius: 10px !important;
 }
 
 .tqb-question-wrapper .tqb-answers-container.tqb-answer-has-image .tqb-answer-inner-wrapper {
@@ -965,7 +965,12 @@ body #tcb-modal-wordpress-content div.wp-editor-area {
         flex-direction: column;
     }
     
+    .tqb-answer-inner-wrapper {
+        border-radius: 7px !important;
+    }
+    
     .tqb-question-wrapper .tqb-answers-container.tqb-answer-has-image .tqb-answer-inner-wrapper {
+        box-sizing: border-box;
         width: 100% !important;
         padding: 15px !important;
     }
