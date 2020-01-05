@@ -40,7 +40,6 @@ $(document).ready(function () {
 	
 function validate()                                    
 { 
-	alert("hello!");
     var name = document.forms["lead-gen-form-main"]["name"];               
     var email = document.forms["lead-gen-form-main"]["email"];    
   
@@ -49,7 +48,7 @@ function validate()
     { 
         window.alert("Please enter your name."); 
         name.focus(); 
-        return false; 
+        return false;
     } 
        
     if (email.value == "" || email.value == "Your Email")                                   

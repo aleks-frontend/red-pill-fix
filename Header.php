@@ -1,4 +1,4 @@
-<script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit' async defer></script>
+<script src='https://www.google.com/recaptcha/api.js?&render=explicit' async defer></script>
 
 <script type="text/javascript">
   $(".g-recaptcha").each(function() {
@@ -16,8 +16,12 @@ function onSubmitLeadGenFooter(token) {
   document.getElementById("lead-gen-form-footer").submit();
 }
 
-function onSubmitLeadGenMain(token) {
-  document.getElementById("lead-gen-form-main").submit();
+function onSubmitLeadGenMain(token) {   
+    const captchaButton = $('#captcha4');
+    const realSubmitButton = captchaButton.clone(false).removeClass('g-recaptcha');
+
+    captchaButton.hide().after(realSubmitButton);
+    realSubmitButton.trigger('click');
 }
 
 function onSubmitLeadGenLightbox(token) {
