@@ -16,8 +16,16 @@ function onSubmitLeadGenFooter(token) {
   document.getElementById("lead-gen-form-footer").submit();
 }
 
-function onSubmitLeadGenMain(token) {   
-    const captchaButton = $('#captcha4');
+function onSubmitLeadGenPromo(token) {
+  document.getElementById("lead-gen-form-promo").submit();
+}
+
+function onSubmitLeadGenMain(token) {
+  document.getElementById("lead-gen-form-main").submit();
+}
+
+function onSubmitLeadGenQuiz(token) {   
+    const captchaButton = $('#captcha6');
     const realSubmitButton = captchaButton.clone(false).removeClass('g-recaptcha');
 
     captchaButton.hide().after(realSubmitButton);

@@ -2082,6 +2082,10 @@ input:focus, textarea:focus, button:focus {
          cursor: pointer;
 }
 
+#menu-academy {
+	background: transparent;
+}
+
 div#floating_menu div#nav_right {
   padding-right: 15px;
 }
