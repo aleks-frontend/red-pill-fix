@@ -1,3 +1,9 @@
+<div class="errorPopup__overlay js-errorPopup__overlay">
+	<div class="errorPopup">
+		<div class="errorPopup__label js-errorPopup__label">Please enter your name.</div>
+		<button class="errorPopup__button js-errorPopup__button">Okay</button>
+	</div>
+</div><!-- end errorPopup__overlay --> 
 <div id="optin-newsletter-form-quiz" style="display: inline-block; position: relative">
 <script src="https://www.google.com/recaptcha/api.js"></script>
 <form id="lead-gen-form-quiz" name="lead-gen-form-quiz" action="https://redpillquants.com/recaptcha/quiz-results.php" method="POST" accept-charset="utf-8" onsubmit="return validate()" _lpchecked="1">
@@ -37,27 +43,41 @@ $(document).ready(function () {
 		$(".grecaptcha-badge").addClass("showgr");
 	});
 });
+
+const errorPopup = document.querySelector('.js-errorPopup__overlay');  
+const errorPopupLabel = errorPopup.querySelector('.js-errorPopup__label');  		
+const errorPopupButton = errorPopup.querySelector('.js-errorPopup__button');  
 	
 function validate()                                    
 { 
     var name = document.forms["lead-gen-form-quiz"]["name"];               
-    var email = document.forms["lead-gen-form-quiz"]["email"];    
-  
+    var email = document.forms["lead-gen-form-quiz"]["email"];
    
     if (name.value == "" || name.value == "Your Name")                                  
     { 
-        window.alert("Please enter your name."); 
+				showPopup('Please enter your name.');
         name.focus(); 
         return false;
     } 
        
     if (email.value == "" || email.value == "Your Email")                                   
     { 
-        window.alert("Please enter a valid e-mail address."); 
+				showPopup('Please enter a valid e-mail address.')
         email.focus(); 
         return false; 
     } 
    
     return true; 
 }	
+
+function showPopup(message) {
+		errorPopup.style.display = 'flex';
+		errorPopupLabel.innerText = message;
+}
+
+function hidePopup() {
+		errorPopup.style.display = 'none';
+}
+
+errorPopupButton.addEventListener('click', hidePopup);
 </script>

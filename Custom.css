@@ -2194,3 +2194,48 @@ div#floating_menu div#nav_right {
 	position:relative;
 	top:1px;
 }
+
+/* Custom Error Popup Styling */
+.errorPopup__overlay {
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0, 0.7);
+    z-index: 999;
+}
+
+.errorPopup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.errorPopup__label {
+    font-weight: var(--g-regular-weight, normal) !important;
+    font-size: 20px !important;
+    margin-bottom: 30px;
+}
+
+.errorPopup__button {
+    width: 180px;
+    border: none;
+    border-radius: 30px;
+    overflow: hidden;
+    font-size: 18px;
+    font-family: FaktPro-Normal;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(224, 56, 74) !important;
+}
