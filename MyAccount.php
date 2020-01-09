@@ -4,7 +4,7 @@
 <div class="breadcrumb"><a href="https://redpillquants.com/member-home/">Member</a> &gt; My Account</div>
 </div>
 <div id="mm-services-section" class="mm-myaccount-module">
-<div id="mm-services-header" class="mm-myaccount-module-header"><i class="icon-upper_sigma_icon mm-icon gray" aria-hidden="true" data-icon=""></i>Membership <span id="mm-account-membership-plan">[MM_Form_Data name='membershipLevelName']</span> [MM_Member_Decision status='!pending_cancel']
+<div id="mm-services-header" class="mm-myaccount-module-header"><i class="fa fa-university mm-icon gray" aria-hidden="true"></i>Membership <span id="mm-account-membership-plan">[MM_Form_Data name='membershipLevelName']</span> [MM_Member_Decision status='!pending_cancel']
 <a class="mm-cancel-membership-button" href="[MM_Form_Button type='cancelMembership']">Cancel</a> [/MM_Member_Decision]</div>
 <div class="mm-myaccount-content-wrapper">
 <div id="mm-account-details-body" class="mm-myaccount-block">
