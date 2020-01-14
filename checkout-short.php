@@ -20,7 +20,7 @@
 [MM_Form_Field type='input' name='firstName' customAttributes='placeholder=""']</p>
 <p id="mm-formfield-width-right" class="mm-formField"><label>Last Name:</label>
 [MM_Form_Field type='input' name='lastName' customAttributes='placeholder=""']</p>
-[MM_Form_Field type='hidden' name='phone' isRequired='false' customAttributes='placeholder="Phone Number"']</p>
+[MM_Form_Field type='hidden' name='phone' isRequired='false' customAttributes='placeholder=""']</p>
 
 </div>
 [/MM_Form_Section]
@@ -31,12 +31,12 @@
 
 <div id="mm-creditcard-field">
 <p class="mm-formField"><label>Credit Card:</label>
-[MM_Form_Field name='ccNumber' customAttributes='placeholder="Credit Card Number"']</p>
+[MM_Form_Field name='ccNumber' customAttributes='placeholder=""']</p>
 
 </div>
 <div id="mm-security-field">
 <p class="mm-formField"><label>Security Code:</label>
-[MM_Form_Field name='ccSecurityCode' customAttributes='placeholder="Security Code"']</p>
+[MM_Form_Field name='ccSecurityCode' customAttributes='placeholder=""']</p>
 
 </div>
 <div id="mm-exp-field">
@@ -44,10 +44,10 @@
 [MM_Form_Field name='ccExpirationDate']</p>
 
 </div>
-[MM_Form_Field type='hidden' name='billingAddress' isRequired='false' customAttributes='placeholder="Billing Address"']</p>
-[MM_Form_Field type='hidden' name='billingCity' isRequired='false' customAttributes='placeholder="Billing City"']</p>
-[MM_Form_Field type='hidden' name='billingState' isRequired='false' customAttributes='placeholder="Billing State"']</p>
-[MM_Form_Field type='hidden' name='billingZipCode' isRequired='false' customAttributes='placeholder="Billing Zip Code"']</p>
+[MM_Form_Field type='hidden' name='billingAddress' isRequired='false' customAttributes='placeholder=""']</p>
+[MM_Form_Field type='hidden' name='billingCity' isRequired='false' customAttributes='placeholder=""']</p>
+[MM_Form_Field type='hidden' name='billingState' isRequired='false' customAttributes='placeholder=""']</p>
+[MM_Form_Field type='hidden' name='billingZipCode' isRequired='false' customAttributes='placeholder=""']</p>
 [MM_Form_Field type='hidden' name='billingCountry' isRequired='false']</p>
 
 </div>
@@ -59,10 +59,10 @@
 [MM_Form_Field name='shippingSameAsBilling']</p>
 [MM_Form_Subsection type='shippingAddress']
 <div>
-[MM_Form_Field name='shippingAddress' customAttributes='placeholder="Shipping Address"']</p>
-[MM_Form_Field name='shippingCity' customAttributes='placeholder="Shipping City"']</p>
-[MM_Form_Field name='shippingState' customAttributes='placeholder="Shipping State"']</p>
-[MM_Form_Field name='shippingZipCode' customAttributes='placeholder="Shipping Zip Code"']</p>
+[MM_Form_Field name='shippingAddress' customAttributes='placeholder=""']</p>
+[MM_Form_Field name='shippingCity' customAttributes='placeholder=""']</p>
+[MM_Form_Field name='shippingState' customAttributes='placeholder=""']</p>
+[MM_Form_Field name='shippingZipCode' customAttributes='placeholder=""']</p>
 [MM_Form_Field name='shippingCountry']</p>
 
 </div>
