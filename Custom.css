@@ -1809,6 +1809,14 @@ label.mm-remember-me,
     margin: 0;
 }
 
+#mm-order-history-body table tr {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#mm-order-history-body table tr:last-child {
+    border: none;
+}
+
 #mm-order-history-body table th {
     font-size: 15px;
     background: #0a2335;
@@ -2276,6 +2284,17 @@ div#floating_menu div#nav_right {
     padding-bottom: 11px;
     color: rgb(255, 255, 255);
     background-color: rgb(224, 56, 74) !important;
+}
+
+/* Custom Dialog Styling */
+.mm-dialog-button-container .mm-ui-button.blue {
+    background: #e0384a;
+    border: none;
+    border-radius: 18px;
+}
+
+.mm-dialog-button-container .mm-ui-button {
+    border-radius: 18px;
 }
 
 /* Helper classes */
