@@ -136,7 +136,7 @@ Shipping: [MM_Order_Data name='shipping' doFormat='true']<br/>
 Order Total: [MM_Order_Data name='total' doFormat='true']
 </p>
 
-<p>
+<p class="u-hide">
 Billing Address:<br/>
 [MM_Order_Data name='billingAddress']<br/>
 [MM_Order_Data name='billingCity'], [MM_Order_Data name='billingState'] [MM_Order_Data name='billingZipCode']<br/>
