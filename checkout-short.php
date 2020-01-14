@@ -12,14 +12,14 @@
 [MM_Form_Section type='accountInfo']
 <div id="mm-account-information-section" class="mm-checkoutInfoBlock">
 <h3>Account Information</h3>
-<p class="mm-formField"><label>Email:</label>
-[MM_Form_Field type='input' name='email' customAttributes='placeholder="Email Address"']</p>
+<p id="mm-formfield-width-left" class="mm-formField"><label>Email:</label>
+[MM_Form_Field type='input' name='email' customAttributes='placeholder=""']</p>
+<p id="mm-formfield-width-right" class="mm-formField"><label>Password:</label>
+[MM_Form_Field type='input' name='password' customAttributes='placeholder=""']</p>
 <p id="mm-formfield-width-left" class="mm-formField"><label>First Name:</label>
-[MM_Form_Field type='input' name='firstName' customAttributes='placeholder="First Name"']</p>
+[MM_Form_Field type='input' name='firstName' customAttributes='placeholder=""']</p>
 <p id="mm-formfield-width-right" class="mm-formField"><label>Last Name:</label>
-[MM_Form_Field type='input' name='lastName' customAttributes='placeholder="Last Name"']</p>
-<p id="mm-formfield-width-left" class="mm-formField"><label>Password:</label>
-[MM_Form_Field type='input' name='password' customAttributes='placeholder="Password"']</p>
+[MM_Form_Field type='input' name='lastName' customAttributes='placeholder=""']</p>
 [MM_Form_Field type='hidden' name='phone' isRequired='false' customAttributes='placeholder="Phone Number"']</p>
 
 </div>
