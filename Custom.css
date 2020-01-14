@@ -1141,7 +1141,7 @@ body .mm-checkoutContainer .mm_right_column {
 }
 
 .mm-formField {
-  margin-top: 10px;
+  margin-top: 0;
   padding-bottom: 5px !important;
 
 
@@ -1224,13 +1224,16 @@ input[type="text"] , input[type="password"], select, .mm-field {
   padding: 20px;
   border: 2px solid #e5e5e5;
   margin-bottom: 20px;
-  border-radius: 5px;
+  border-radius: 4px;
   overflow: auto;
   background: transparent;
   margin-top: 30px;
 }
 
-
+/* Additional stronger selector to override the border-radius */
+.mm_left_column .mm-checkoutInfoBlock {
+    border-radius: 0;
+}
 
 body .mm-checkoutContainer h3 {
   font-size: 2em;
@@ -1480,7 +1483,7 @@ form#mm_checkout_form p {
   #mm-creditcard-field {
     width: 36%;
     display: inline-block;
-    margin-right: 9%;
+    margin-right: 6%;
   }
 }
 
@@ -1488,14 +1491,23 @@ form#mm_checkout_form p {
   #mm-security-field {
     width: 22%;
     display: inline-block;
-    margin-right: 9%;
+    margin-right: 6%;
   }
 }
 
 @media only screen and (min-width: 1081px) {
   #mm-exp-field {
-    width: 22%;
+    width: 28%;
     display: inline-block;
+  }
+
+  #mm-exp-field .mm-selectList.mm-expMonthList {
+      width: 55%;
+      margin-right: 4%;
+  }
+
+  #mm-exp-field .mm-selectList.mm-expYearList {
+      width: 41%;
   }
 }
 /* AO: Credit Card Fields Width - Tablet and Mobile */
@@ -1519,8 +1531,9 @@ form#mm_checkout_form p {
 .mm-label,
 .mm-myaccount-label{
   margin-left: 0px;
-  color: black;
+  color:#ababab;
   font-size: 15px;
+  font-weight: bold !important;
   font-family: FaktPro-Light !important;
 }
 
@@ -1535,8 +1548,8 @@ form#mm_checkout_form p {
   color: #444;
   font-family: FaktPro-Normal;
   font-size: 15px;
-  border-radius: 4px;
-  border: 1px solid #e5e5e5;
+  border-radius: 0;
+  border: 2px solid #e5e5e5;
   padding-left: 5px;
 }
 
@@ -1789,12 +1802,36 @@ label.mm-remember-me,
   padding-bottom:30px;
 }
 
+/* Additional styling for Order History form */
+#mm-order-history-body {
+    width: 100% !important;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#mm-order-history-body table th {
+    font-size: 15px;
+    background: #0a2335;
+}
+
+#mm-order-history-body table td {
+    font-size: 14px;
+}
+
+#mm-order-history-body table td span {
+    font-family: 'FaktPro-Blond' !important;
+}
+
 .mm-myaccount-module {
   max-width:650px;
   margin: 0 auto !important;
   margin-bottom: 20px !important;
   border-radius:0px !important;
   padding: 10px 20px 10px 20px !important;
+}
+
+#mm-billing-shipping-info-section {
+    display: none;
 }
 
 #account-page-welcome {
@@ -2240,3 +2277,6 @@ div#floating_menu div#nav_right {
     color: rgb(255, 255, 255);
     background-color: rgb(224, 56, 74) !important;
 }
+
+/* Helper classes */
+.u-hide { display: none; }
