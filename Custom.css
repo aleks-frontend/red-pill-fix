@@ -1201,15 +1201,6 @@ input[type="text"] , input[type="password"], select, .mm-field {
   border-radius: 4px;
 }
 
-@media only screen and (max-width: 540px) {
-
-
-
-  body .mm-checkoutContainer .mm_right_column {
-    width: 100% !important;
-  }
-}
-
 .mm-checkoutInfoBlock label {
   color: #777;
 
@@ -1256,7 +1247,7 @@ body .mm-checkoutContainer h3 {
   font-family: FaktPro-Blond, sans-serif;
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 767px) {
   body .mm-checkoutContainer .mm_right_column {
     width: 100% !important;
   }
@@ -1433,11 +1424,6 @@ form#mm_checkout_form p {
 /* checkout form layout design */
 
 @media only screen and (min-width: 768px) {
-
-
-
-
-
   body .mm-checkoutContainer {
     max-width: 1000px;
   }
@@ -1453,6 +1439,12 @@ form#mm_checkout_form p {
   .mm-paymentbuttons {
     margin-bottom: 25px;
   }
+}
+
+@media only screen and (max-width: 767px) {
+    body .mm-checkoutContainer .mm_left_column {
+        width: 100% !important;
+    }
 }
 
 
@@ -1495,21 +1487,30 @@ form#mm_checkout_form p {
   }
 }
 
-@media only screen and (min-width: 1081px) {
-  #mm-exp-field {
-    width: 28%;
+#mm-exp-field {
+    width: 100%;
     display: inline-block;
-  }
-
-  #mm-exp-field .mm-selectList.mm-expMonthList {
-      width: 55%;
-      margin-right: 4%;
-  }
-
-  #mm-exp-field .mm-selectList.mm-expYearList {
-      width: 41%;
-  }
 }
+
+@media only screen and (min-width: 545px) {
+    #mm-exp-field {
+        width: 28%;
+    }    
+}
+
+#mm-exp-field label {
+    float: none;
+}
+
+#mm-exp-field .mm-selectList.mm-expMonthList {
+    width: 55%;
+    margin-right: 4%;
+}
+
+#mm-exp-field .mm-selectList.mm-expYearList {
+    width: 41%;
+}
+
 /* AO: Credit Card Fields Width - Tablet and Mobile */
 @media only screen and (max-width:1080px) and (min-width: 545px) {
   #mm-security-field {
