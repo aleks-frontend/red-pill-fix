@@ -1,10 +1,13 @@
 [MM_Custom_Decision tstmls='true']
+
 <style>.testimonial {display: block;}</style>
+
 [/MM_Custom_Decision]
 [MM_Custom_Decision tstmls='false']
-<style>.testimonial {display: none;}</style>
-[/MM_Custom_Decision]
 
+<style>.testimonial {display: none;}</style>
+
+[/MM_Custom_Decision]
 <div class="mm-checkoutContainer">[MM_Form type='checkout']
 [MM_Form_Message type='error']
 <div class="mm_left_column">
@@ -13,15 +16,15 @@
 <div id="mm-account-information-section" class="mm-checkoutInfoBlock">
 <h3>Account Information</h3>
 <p class="mm-formField"><label>Email:</label>
-[MM_Form_Field type='input' name='email' customAttributes='placeholder="Email Address"']</p>
+[MM_Form_Field type='input' name='email' customAttributes='placeholder=""']</p>
 <p id="mm-formfield-width-left" class="mm-formField"><label>First Name:</label>
-[MM_Form_Field type='input' name='firstName' customAttributes='placeholder="First Name"']</p>
+[MM_Form_Field type='input' name='firstName' customAttributes='placeholder=""']</p>
 <p id="mm-formfield-width-right" class="mm-formField"><label>Last Name:</label>
-[MM_Form_Field type='input' name='lastName' customAttributes='placeholder="Last Name"']</p>
+[MM_Form_Field type='input' name='lastName' customAttributes='placeholder=""']</p>
 <p id="mm-formfield-width-left" class="mm-formField"><label>Password:</label>
-[MM_Form_Field type='input' name='password' customAttributes='placeholder="Password"']</p>
+[MM_Form_Field type='input' name='password' customAttributes='placeholder=""']</p>
 <p id="mm-formfield-width-right" class="mm-formField"><label>Phone:</label>
-[MM_Form_Field type='input' name='phone' isRequired='false' customAttributes='placeholder="Phone Number"']</p>
+[MM_Form_Field type='input' name='phone' isRequired='false' customAttributes='placeholder=""']</p>
 
 </div>
 [/MM_Form_Section]
@@ -32,12 +35,12 @@
 
 <div id="mm-creditcard-field">
 <p class="mm-formField"><label>Credit Card:</label>
-[MM_Form_Field name='ccNumber' customAttributes='placeholder="Credit Card Number"']</p>
+[MM_Form_Field name='ccNumber' customAttributes='placeholder=""']</p>
 
 </div>
 <div id="mm-security-field">
 <p class="mm-formField"><label>Security Code:</label>
-[MM_Form_Field name='ccSecurityCode' customAttributes='placeholder="Security Code"']</p>
+[MM_Form_Field name='ccSecurityCode' customAttributes='placeholder=""']</p>
 
 </div>
 <div id="mm-exp-field">
@@ -47,13 +50,13 @@
 </div>
 <h3 class="mm-hr">Billing Address</h3>
 <p class="mm-formField"><label>Address:</label>
-[MM_Form_Field name='billingAddress' customAttributes='placeholder="Billing Address"']</p>
+[MM_Form_Field name='billingAddress' customAttributes='placeholder=""']</p>
 <p id="mm-formfield-width-left" class="mm-formField"><label>City:</label>
-[MM_Form_Field name='billingCity' customAttributes='placeholder="Billing City"']</p>
+[MM_Form_Field name='billingCity' customAttributes='placeholder=""']</p>
 <p id="mm-formfield-width-right" class="mm-formField"><label>State:</label>
-[MM_Form_Field name='billingState' customAttributes='placeholder="Billing State"']</p>
+[MM_Form_Field name='billingState' customAttributes='placeholder=""']</p>
 <p id="mm-formfield-width-left" class="mm-formField"><label>Zip:</label>
-[MM_Form_Field name='billingZipCode' customAttributes='placeholder="Billing Zip Code"']</p>
+[MM_Form_Field name='billingZipCode' customAttributes='placeholder=""']</p>
 <p id="mm-formfield-width-right" class="mm-formField"><label>Country:</label>
 [MM_Form_Field name='billingCountry']</p>
 
@@ -69,13 +72,13 @@
 [MM_Form_Subsection type='shippingAddress']
 <div>
 <p class="mm-formField"><label>Address:</label>
-[MM_Form_Field name='shippingAddress' customAttributes='placeholder="Shipping Address"']</p>
+[MM_Form_Field name='shippingAddress' customAttributes='placeholder=""']</p>
 <p class="mm-formField"><label>City:</label>
-[MM_Form_Field name='shippingCity' customAttributes='placeholder="Shipping City"']</p>
+[MM_Form_Field name='shippingCity' customAttributes='placeholder=""']</p>
 <p class="mm-formField"><label>State:</label>
-[MM_Form_Field name='shippingState' customAttributes='placeholder="Shipping State"']</p>
+[MM_Form_Field name='shippingState' customAttributes='placeholder=""']</p>
 <p class="mm-formField"><label>Zip :</label>
-[MM_Form_Field name='shippingZipCode' customAttributes='placeholder="Shipping Zip Code"']</p>
+[MM_Form_Field name='shippingZipCode' customAttributes='placeholder=""']</p>
 <p class="mm-formField"><label>Country:</label>
 [MM_Form_Field name='shippingCountry']</p>
 
