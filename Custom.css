@@ -1276,7 +1276,8 @@ body .mm-checkoutContainer h3 {
 }
 
 .mm-checkoutInfoBlock .StripeElement {
-  border: 1px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
+  border-radius: 0;
   width: 100%;
   float: left;
   padding: 5px !important;
@@ -1399,6 +1400,10 @@ p#mm_field_first_name {
 .mm-checkoutContainer #mm_checkout_form .mm-checkoutInfoBlock p,
 form#mm_checkout_form p {
   margin-bottom: 0 !important;
+}
+
+.mm-checkoutInfoBlock .mm-formField {
+    padding-bottom: 0px !important;
 }
 
 
