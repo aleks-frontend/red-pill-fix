@@ -1132,8 +1132,12 @@ margin-right: 0 !important;
 max-width: 12000px !important;
 }
 
+@media only screen and (max-width: 540px) {
+  .mm-checkoutContainer .testimonial { padding: 20px; }
+}
+
 body .mm-checkoutContainer .mm_right_column {
-width: 35% !important;
+width: 100%;
 }
 
 .mm-label-column {
@@ -1149,6 +1153,10 @@ padding-bottom: 5px !important;
   /* border-radius: 4px;
   border: 1px solid #CECECE;*/
 ;
+}
+
+.mm-checkoutInfoBlock .mm-formField label {
+  width: auto;
 }
 
 .mm-formField label {
@@ -1196,7 +1204,7 @@ font-family: 'FaktPro-Light' !important;
 float: left;
 width: 100%;
 background: #fff;
-padding: 40px 40px 10px;
+padding: 40px 20px 10px !important;
 box-sizing: border-box;
 border-radius: 4px;
 }
@@ -1428,22 +1436,26 @@ body .mm-checkoutContainer h3 {
 
 /* checkout form layout design */
 
-@media only screen and (min-width: 768px) {
-body .mm-checkoutContainer {
-  max-width: 1000px;
+.mm-checkoutContainer .mm_left_column {
+  width: 100%;
 }
 
-body .mm-checkoutContainer .mm_left_column {
-  width: 55.6%;
-}
+@media only screen and (min-width: 769px) {
+  body .mm-checkoutContainer {
+    max-width: 1000px;
+  }
 
-body .mm-checkoutContainer .mm_right_column {
-  width: 40.3%;
-}
+  body .mm-checkoutContainer .mm_left_column {
+    width: 55.6%;
+  }
 
-.mm-paymentbuttons {
-  margin-bottom: 25px;
-}
+  body .mm-checkoutContainer .mm_right_column {
+    width: 40.3%;
+  }
+
+  .mm-paymentbuttons {
+    margin-bottom: 25px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
