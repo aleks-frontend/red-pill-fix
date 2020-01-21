@@ -1486,10 +1486,10 @@ body .mm-checkoutContainer .mm_right_column {
 }
 
 @media only screen and (min-width:1081px) {
-#mm-security-field {
-  width: 22%;
-  display: inline-block;
-  vertical-align: top;
+  #mm-security-field {
+    width: 22%;
+    display: inline-block;
+    vertical-align: top;
   margin-right: 6%;
 }
 }
