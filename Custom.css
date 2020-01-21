@@ -1481,6 +1481,7 @@ body .mm-checkoutContainer .mm_right_column {
   width: 36%;
   display: inline-block;
   margin-right: 6%;
+  vertical-align: top;
 }
 }
 
@@ -1488,6 +1489,7 @@ body .mm-checkoutContainer .mm_right_column {
 #mm-security-field {
   width: 22%;
   display: inline-block;
+  vertical-align: top;
   margin-right: 6%;
 }
 }
@@ -1495,6 +1497,7 @@ body .mm-checkoutContainer .mm_right_column {
 #mm-exp-field {
   width: 100%;
   display: inline-block;
+  vertical-align: top;
 }
 
 @media only screen and (min-width: 545px) {
