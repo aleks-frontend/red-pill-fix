@@ -256,6 +256,15 @@ padding-top: 25px;
 text-align: center;
 }
 
+@media only screen and (max-width: 768px) and (min-width: 540px) {
+  .wrp {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;    
+  }
+}
+
 footer div.fmn {
 background: #0e2433 !important;
 }
@@ -1204,9 +1213,15 @@ font-family: 'FaktPro-Light' !important;
 float: left;
 width: 100%;
 background: #fff;
-padding: 40px 20px 10px !important;
+padding: 0 0 10px !important;
 box-sizing: border-box;
 border-radius: 4px;
+}
+
+@media screen and (max-width: 540px) {
+  .mm-checkoutContainer #mm_checkout_form {
+    padding: 0 20px 10px !important;
+  }
 }
 
 .mm-checkoutInfoBlock label {
@@ -1317,6 +1332,12 @@ width: 100%;
 
 /* right sidebar checkout section */
 
+@media only screen and (max-width: 767px) {
+  .mm-checkoutSection2 h2  {
+    margin-top: 0;
+  }
+}
+
 .mm-checkoutSection2 h2 span,
 .mm-checkoutSection2 h2 {
 font-size: 1.8em;
@@ -1348,7 +1369,7 @@ div#mm-discount-info-block-0 ~ ul {
 border-top: 1px solid #e5e5e5;
 padding: 10px 0 0 !important;
 border-bottom: 1px solid #e5e5e5;
-margin-bottom: 15px !important;
+margin-bottom: 20px !important;
 width: 100%;
 }
 
@@ -1428,7 +1449,7 @@ margin-bottom: 0 !important;
 }
 
 body .mm-checkoutContainer h3 {
-  font-size: 20px;
+  margin: 20px 0;
 }
 }
 
@@ -1461,6 +1482,7 @@ body .mm-checkoutContainer h3 {
 @media only screen and (max-width: 767px) {
   body .mm-checkoutContainer .mm_left_column {
       width: 100% !important;
+      margin-bottom: 2%;
   }
 }
 
