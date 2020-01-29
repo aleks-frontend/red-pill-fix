@@ -34,7 +34,20 @@
     max-width: 100%;
   }
 
-  .lead-gen-form-lightbox .submitButton { margin-left: 0 !important; }
+  .lead-gen-form-lightbox .submitButton { margin-left: 0 !important; }  
+}
+
+/* Additional style to hide the g-recaptcha on load - this should be removed when this page goes live */
+.grecaptcha-badge {
+  visibility: hidden;
+  opacity: 0;
+  transition: linear opacity 1s;
+}
+
+.grecaptcha-badge.showgr {
+  visibility: visible;
+  opacity: 1;
+  transition: linear opacity 1s;
 }
 </style>
 <div id="optin-newsletter-form-lightbox" style="white-space: nowrap;">
