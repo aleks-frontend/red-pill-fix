@@ -1,6 +1,9 @@
 <div id="optin-newsletter-form-lightbox" style="white-space: nowrap;">
 <script src="https://www.google.com/recaptcha/api.js"></script>
-<form id="lead-gen-form-lightbox" action="https://sendy.redpillquants.com/subscribe" method="POST" accept-charset="utf-8">
+<form id="lead-gen-form-lightbox" action="https://sendy.redpillquants.com/subscribe" 
+    method="POST" 
+    accept-charset="utf-8"
+    style="display: flex; align-items: center;">
 	<input style="width: 175px;
 		background-color : #e1e1e1; 
 		border-radius: 25px;
